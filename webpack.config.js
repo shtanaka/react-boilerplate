@@ -8,6 +8,11 @@ module.exports = {
     path: path.join(__dirname, "/dist"),
     filename: "index_bundle.js"
   },
+  resolve: {
+    alias: {
+      src: path.resolve('src/'),
+    },
+  },
   module: {
     rules: [
       {
@@ -47,13 +52,13 @@ module.exports = {
                     '>1%',
                     'last 4 versions',
                     'Firefox ESR',
-                    'not ie < 9',  
+                    'not ie < 9',
                   ],
                   flexbox: 'no-2009',
                 }),
               ],
             },
-          }, 
+          },
         ]
       }
     ]
