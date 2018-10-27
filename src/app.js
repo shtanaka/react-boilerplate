@@ -1,14 +1,11 @@
 import React, { Component } from 'react';
-import { BrowserRouter } from 'react-router-dom';
-import { Main } from 'src/components/main/main';
+import { Main } from 'src/components/core/main';
 import 'src/styles/app.scss';
 
 export class App extends Component {
   render() {
     return (
-      <BrowserRouter>
-        <Main />
-      </BrowserRouter>
+      <Main />
     );
   }
 }

@@ -1,8 +1,10 @@
 body {
-  h1 {
-    &.blue-centered-h1 {
-      color: #27aedb;
-      text-align: center;
-    }
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1;
+  font-size: 12px;
+
+  hr {
+    margin: 0;
   }
 }

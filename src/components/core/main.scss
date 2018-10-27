@@ -1,0 +1,26 @@
+.main {
+  .header {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    background: darkslategrey;
+    a {
+      text-decoration: none;
+      margin-right: 30px;
+      color: lightgray;
+      &:visited {
+        color: lightgray;
+      }
+      &:hover {
+        color: lightgray;
+      }
+      &.active {
+        color: white;
+      }
+    }
+  }
+  .content {
+    padding: 20px 20px;
+  }
+}
