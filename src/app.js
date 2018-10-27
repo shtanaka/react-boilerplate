@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
+import { BrowserRouter } from 'react-router-dom';
+import { Main } from 'src/components/main/main';
 import 'src/styles/app.scss';
 
 export class App extends Component {
   render() {
     return (
-      <div>
-        <h1 class="blue-centered-h1">My React App!</h1>
-      </div>
+      <BrowserRouter>
+        <Main />
+      </BrowserRouter>
     );
   }
 }
