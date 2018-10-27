@@ -7,7 +7,7 @@ React boilerplate using Webpack + Babel
 - `npm start`
 
 ## For prod
-Since we use React Router, we need to redirect all routes to SPA so refresh does not break. I managed to do this in nginx adding:
+Since we use React Router, we need to redirect all routes to SPA so refresh won't break. Managed to do this in nginx:
 
 ```
 location / {
@@ -17,7 +17,8 @@ location / {
 }
 ```
 
-Saw similar solution for express (NOT TESTED):
+Found similar solution for express (NOT TESTED):
+
 ```
 app.get('/*', function(req, res) {
   res.sendFile(path.join(__dirname, 'path/to/your/index.html'), function(err) {
